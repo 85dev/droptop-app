@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DROPTOPAppUpgraded</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-list">
+      <%= image_tag('logo-flat.png', class: "logo-nav") %>
+      </div>
+      <div>
+        <ul class="icon-list">
+          <div class="icon-div">
+            <li><%= image_tag('icone-user2.png', class:"icone-nav") %></li>
+            <span> Connexion </span>
+          </div>
+          <li><%= image_tag('') %></li>
+          <li><%= image_tag('') %></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="welcome-container">
+      <%= image_tag('logo-cover.png', class:"logo-cover") %>
+      <h3 style="margin-top: 50px">Droptop est une plateforme de mise en relation de missions 
+      entre les ingénieurs d'affaire et les ingénieurs en intercontrat. 
+      <br><br> Inscrivez-vous pour avoir accès à toutes les missions.</h3>
+      <div style="margin-top: 80px">
+          <a href="https://superdevresources.com/css-button-glow-effect//" class="button glow-button" target="_blank">Inscription</a>
+      </div>
+    </div>
+    <%= yield %>
+  </body>
+</html>
