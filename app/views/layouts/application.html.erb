@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DROPTOPAppUpgraded</title>
+    <title>Droptop v2</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -29,15 +29,6 @@
         </ul>
       </div>
     </nav>
-    <div class="welcome-container">
-      <%= image_tag('logo-cover.png', class:"logo-cover") %>
-      <h3 style="margin-top: 50px">Droptop est une plateforme de mise en relation de missions 
-      entre les ingénieurs d'affaire et les ingénieurs en intercontrat. 
-      <br><br> Inscrivez-vous pour avoir accès à toutes les missions.</h3>
-      <div style="margin-top: 80px">
-          <a href="https://superdevresources.com/css-button-glow-effect//" class="button glow-button" target="_blank">Inscription</a>
-      </div>
-    </div>
     <%= yield %>
   </body>
 </html>

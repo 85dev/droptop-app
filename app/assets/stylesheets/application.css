@@ -1,20 +1,4 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
-
- body {
+body {
     margin: 0 auto;
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
@@ -35,9 +19,9 @@
 
  .button {
    text-decoration: none;
-   color: rgba(255, 255, 255, 0.8);
+   color: white;
    background: #FF1D25;
-   padding: 15px 40px;
+   padding: 15px 40px 11px 40px;
    border-radius: 4px;
    font-weight: normal;
    text-transform: uppercase;
@@ -46,7 +30,7 @@
  
  .glow-button:hover {
    color: rgba(255, 255, 255, 1);
-   box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+   box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
  }
 
  nav {
@@ -55,6 +39,7 @@
     justify-content: space-between;
     background-color: #FBB03B;
     backdrop-filter: blur(45px);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
  }
 
  .nav-list {
@@ -101,8 +86,8 @@
    flex-direction: column;
    align-items: center;
    background-image: url('cover-welcome.png');
-   background-size: cover;
-   min-height: 800px;
+   background-size:auto;
+   min-height: 1000px;
 }
 
 .logo-cover {
